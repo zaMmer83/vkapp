@@ -1,0 +1,10 @@
+<h1><%= @title %></h1>
+
+<div class="search_block">
+  <%= render 'shared/search_form' %>
+</div>
+<ul class="clients">
+  <%= render @clients %>
+</ul>
+
+<%= will_paginate @clients %>

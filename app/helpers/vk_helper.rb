@@ -1,0 +1,2 @@
+module VkHelper
+end

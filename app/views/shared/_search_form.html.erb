@@ -1,0 +1,8 @@
+<%= form_tag request[:path], :method => :get do |f| %>
+  <div class="field">
+    <%= search_field_tag :search, params[:search] %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Search", :name => '' %>
+  </div>
+<% end %>

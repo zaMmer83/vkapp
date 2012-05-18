@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  vk_id: 1
+  vk_token: MyString
+
+two:
+  name: MyString
+  vk_id: 1
+  vk_token: MyString

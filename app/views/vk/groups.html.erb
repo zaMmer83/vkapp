@@ -1,0 +1,16 @@
+<h1><%= @title %></h1>
+
+<div class="search_block">
+  <%= render 'shared/search_form' %>
+</div>
+<% if !@groups.nil? %>
+  <%= @size %>
+  <ul class="groups">
+    <% @groups.each do |group| %>
+      <li>
+        <%= link_to group['name'], "http://vk.com/#{group['screen_name']}" %>
+        <%= group['gid'] %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

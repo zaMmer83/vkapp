@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <nav>
+      <% if current_user %>
+      <ul>
+        <li><%= link_to "Clients", clients_path %></li>
+        <li><%= link_to "Groups", groups_path %></li>
+      </ul>
+      <% end %>
+    </nav>
+  </header> 
+  <section class="round">
+    <% flash.each do |key, value| %>
+        <%= content_tag(:div, value, :class => "flash #{key}") %>
+    <% end %>
+    <%= yield %>
+  </section>
+  <%= debug(params) if Rails.env.development? %>    
+  <%= debug(session) if Rails.env.development? %>  
+</div>
+
+</body>
+</html>
