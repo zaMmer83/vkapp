@@ -1,12 +1,8 @@
 development:
-  VK_APP_ID: 2833254
-  VK_APP_SECRET: "fsM5gFGSZYNX7QecUXEw"
-  VK_APP_HOST: "cosmodrom.com.ua"
+  VK_APP_ID: 111111
+  VK_APP_SECRET: "111111111111111111"
+  VK_APP_HOST: "localhost"
   VK_API_URL: "https://api.vkontakte.ru/method"
   VK_AUTH_URL: "http://oauth.vkontakte.ru/authorize"
   VK_TOKEN_URL: "https://oauth.vkontakte.ru/access_token"
-  VK_GROUP_ID: "cosmodrom_shop"  
-test:
-  VK_GROUP_ID: "cosmodrom_shop"
-production:
-  VK_GROUP_ID: "cosmodrom_shop"
+  VK_GROUP_ID: "some_group"
